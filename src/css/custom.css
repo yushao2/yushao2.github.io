@@ -16,6 +16,16 @@
   --ifm-code-font-size: 95%;
 }
 
+html[data-theme='dark'] {
+  --ifm-color-primary: #f5c211;
+  --ifm-color-primary-dark: #e2b20a;
+  --ifm-color-primary-darker: #d6a809;
+  --ifm-color-primary-darkest: #b08a07;
+  --ifm-color-primary-light: #f6c82a;
+  --ifm-color-primary-lighter: #f7cc37;
+  --ifm-color-primary-lightest: #f8d55c;
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
   display: block;
