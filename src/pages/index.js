@@ -4,7 +4,7 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
+import ExperiencesPanel from '../components/ExperiencesPanel';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -29,11 +29,11 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Main Page`}
+      description="Homepage of Pang Yu Shao's personal website <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <ExperiencesPanel />
       </main>
     </Layout>
   );

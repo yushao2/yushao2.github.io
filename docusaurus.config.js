@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Pang Yu Shao',
+  tagline: 'Associate DevOps Engineer',
   url: 'https://yushao2.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -17,6 +17,8 @@ const config = {
   projectName: 'yushao2.github.io', // Usually your repo name.
   deploymentBranch: "gh-pages",
   trailingSlash: false,
+
+  plugins: ['@docusaurus/plugin-ideal-image'],
 
   presets: [
     [
@@ -55,7 +57,7 @@ const config = {
         items: [
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/yushao2/',
             label: 'GitHub',
             position: 'right',
           },
@@ -104,7 +106,7 @@ const config = {
         //     ],
         //   },
         // ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Pang Yu Shao. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
