@@ -1,13 +1,13 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './ExperiencesPanel.module.css';
-import Image from '@theme/IdealImage';
+import LazyLoad from 'react-lazyload';
 
 const FeatureList = [
   {
     company: 'GovTech Singapore',
     title: 'Associate DevOps Engineer',
-    src: require('../../static/img/govtech.gif'),
+    src: '../img/govtech.gif',
     description: (
       <>
         {/* Docusaurus was designed from the ground up to be easily installed and
@@ -18,7 +18,7 @@ const FeatureList = [
   {
     company: 'Bank of America',
     title: 'Summer Technology Analyst (GMOT)',
-    src: require('../../static/img/bofa.png'),
+    src: '../img/bofa.png',
     description: (
       <>
         {/* Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -29,7 +29,7 @@ const FeatureList = [
   {
     company: 'Bank of America',
     title: 'IA Technology Analyst (Equities)',
-    src: require('../../static/img/bofa.png'),
+    src: '../img/bofa.png',
     description: (
       <>
         {/* Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -40,7 +40,7 @@ const FeatureList = [
   {
     company: 'Shopee',
     title: 'Data Analytics Intern',
-    src: require('../../static/img/shopee.jpeg'),
+    src: '../img/shopee.jpeg',
     description: (
       <>
         {/* Extend or customize your website layout by reusing React. Docusaurus can
@@ -51,7 +51,7 @@ const FeatureList = [
   {
     company: 'Acronis',
     title: 'Research Developer Intern',
-    src: require('../../static/img/acronis.png'),
+    src: '../img/acronis.png',
     description: (
       <>
         {/* Extend or customize your website layout by reusing React. Docusaurus can
@@ -65,7 +65,9 @@ function Feature({src, company, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Image img={src} className={styles.featureSvg} />
+        <LazyLoad >
+          <img src={src} className={styles.featureSvg} />
+        </LazyLoad>
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{company}</h3>
