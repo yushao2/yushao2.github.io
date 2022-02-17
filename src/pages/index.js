@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import ExperiencesPanel from '../components/ExperiencesPanel';
+import ResumePanel from '../components/ResumePanel';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -34,6 +35,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <ExperiencesPanel />
+        <ResumePanel />
       </main>
     </Layout>
   );
