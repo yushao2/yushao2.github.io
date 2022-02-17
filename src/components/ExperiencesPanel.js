@@ -1,13 +1,13 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './ExperiencesPanel.module.css';
-import LazyLoad from 'react-lazyload';
+import Image from '@theme/IdealImage';
 
 const FeatureList = [
   {
     company: 'GovTech Singapore',
     title: 'Associate DevOps Engineer',
-    src: '../img/govtech.gif',
+    src: require('../../static/img/govtech.gif'),
     description: (
       <>
         {/* Docusaurus was designed from the ground up to be easily installed and
@@ -18,7 +18,7 @@ const FeatureList = [
   {
     company: 'Bank of America',
     title: 'Summer Technology Analyst (GMOT)',
-    src: '../img/bofa.png',
+    src: require('../../static/img/bofa.png'),
     description: (
       <>
         {/* Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -29,7 +29,7 @@ const FeatureList = [
   {
     company: 'Bank of America',
     title: 'IA Technology Analyst (Equities)',
-    src: '../img/bofa.png',
+    src: require('../../static/img/bofa.png'),
     description: (
       <>
         {/* Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -40,7 +40,7 @@ const FeatureList = [
   {
     company: 'Shopee',
     title: 'Data Analytics Intern',
-    src: '../img/shopee.jpeg',
+    src: require('../../static/img/shopee.jpeg'),
     description: (
       <>
         {/* Extend or customize your website layout by reusing React. Docusaurus can
@@ -51,7 +51,7 @@ const FeatureList = [
   {
     company: 'Acronis',
     title: 'Research Developer Intern',
-    src: '../img/acronis.png',
+    src: require('../../static/img/acronis.png'),
     description: (
       <>
         {/* Extend or customize your website layout by reusing React. Docusaurus can
@@ -65,9 +65,7 @@ function Feature({src, company, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <LazyLoad >
-          <img src={src} className={styles.featureSvg} />
-        </LazyLoad>
+        <Image img={src} className={styles.featureSvg} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{company}</h3>
