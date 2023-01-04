@@ -49,7 +49,7 @@ const config = {
       },
 
       navbar: {
-        title: 'My Site',
+        title: 'Yu Shao',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
